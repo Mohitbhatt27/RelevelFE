@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Registration Form</title>
+</head>
+
+<body>
+   <h1>Student Registration Form</h1>
+   <table>
+      <tr>
+         <td><label for="name">Name</label></td>
+         <td><input type="text" name="name" id="name" placeholder="Your Name" contenteditable="true"></td>
+      </tr>
+      <tr>
+         <td><label for="address">Address</label></td>
+         <td><input type="text" name="address" id="address" placeholder="Your Address" contenteditable="true"></td>
+      </tr>
+      <tr>
+         <td><label for="gender">Gender</label></td>
+         <td>
+            <input type="radio" name="gender" id="male" value="male" placeholder="Male" contenteditable="true"
+               onclick="this.checked=true;"> Male
+            <input type="radio" name="gender" id="female" value="female" placeholder="Female" contenteditable="true"
+               onclick="this.checked=true;"> Female
+            <input type="radio" name="gender" id="other" value="other" placeholder="Other" contenteditable="true"
+               onclick="this.checked=true;"> Other
+         </td>
+      </tr>
+      <tr>
+         <td><label for="hobbies">Hobbies</label></td>
+         <td>
+            <input type="checkbox" name="hobbies" id="reading" value="reading" placeholder="Reading"
+               contenteditable="true" onclick="this.checked=true;"> Reading
+            <input type="checkbox" name="hobbies" id="writing" value="writing" placeholder="Writing"
+               contenteditable="true" onclick="this.checked=true;"> Writing
+            <input type="checkbox" name="hobbies" id="sports" value="sports" placeholder="Sports" contenteditable="true"
+               onclick="this.checked=true;"> Sports
+            <input type="checkbox" name="hobbies" id="music" value="music" placeholder="Music" contenteditable="true"
+               onclick="this.checked=true;"> Music
+         </td>
+      </tr>
+      <tr>
+         <td><label for="country">Country</label></td>
+         <td>
+            <select name="country" id="country" placeholder="Select Country" contenteditable="true">
+               <option value="">Select Country</option>
+               <option value="United States">United States</option>
+               <option value="Canada">Canada</option>
+               <option value="United Kingdom">United Kingdom</option>
+               <option value="Australia">Australia</option>
+            </select>
+         </td>
+      </tr>
+      <tr>
+         <td></td>
+         <td><input type="submit" value="Submit"></td>
+         <td><input type="reset" value="Reset" style="margin-left:0;"></td>
+      </tr>
+   </table>
+
+</body>
+
+</html>
