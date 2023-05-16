@@ -10,6 +10,7 @@
 
 <body>
    <h1>Student Registration Form</h1>
+   <form action="">
    <table>
       <tr>
          <td><label for="name">Name</label></td>
@@ -22,25 +23,23 @@
       <tr>
          <td><label for="gender">Gender</label></td>
          <td>
-            <input type="radio" name="gender" id="male" value="male" placeholder="Male" contenteditable="true"
-               onclick="this.checked=true;"> Male
-            <input type="radio" name="gender" id="female" value="female" placeholder="Female" contenteditable="true"
-               onclick="this.checked=true;"> Female
-            <input type="radio" name="gender" id="other" value="other" placeholder="Other" contenteditable="true"
-               onclick="this.checked=true;"> Other
+            <input type="radio" name="gender" id="male" value="male" placeholder="Male" contenteditable="true"> Male
+            <input type="radio" name="gender" id="female" value="female" placeholder="Female" contenteditable="true">
+            Female
+            <input type="radio" name="gender" id="other" value="other" placeholder="Other" contenteditable="true"> Other
          </td>
       </tr>
       <tr>
          <td><label for="hobbies">Hobbies</label></td>
          <td>
             <input type="checkbox" name="hobbies" id="reading" value="reading" placeholder="Reading"
-               contenteditable="true" onclick="this.checked=true;"> Reading
+               contenteditable="true"> Reading
             <input type="checkbox" name="hobbies" id="writing" value="writing" placeholder="Writing"
-               contenteditable="true" onclick="this.checked=true;"> Writing
-            <input type="checkbox" name="hobbies" id="sports" value="sports" placeholder="Sports" contenteditable="true"
-               onclick="this.checked=true;"> Sports
-            <input type="checkbox" name="hobbies" id="music" value="music" placeholder="Music" contenteditable="true"
-               onclick="this.checked=true;"> Music
+               contenteditable="true"> Writing
+            <input type="checkbox" name="hobbies" id="sports" value="sports" placeholder="Sports"
+               contenteditable="true"> Sports
+            <input type="checkbox" name="hobbies" id="music" value="music" placeholder="Music" contenteditable="true">
+            Music
          </td>
       </tr>
       <tr>
@@ -56,12 +55,24 @@
          </td>
       </tr>
       <tr>
-         <td></td>
+         <td><label for="photo">Passport Size Photo</label></td>
+         <td><input type="file" name="photo" id="photo"></td>
+      </tr>
+      <tr>
+         <td><label for="resume">Resume</label></td>
+         <td><input type="file" name="resume" id="resume"></td>
+      <tr>
+         <td><label for="email">Email</label></td>
+         <td><input type="email" name="email" id="email" placeholder="Your Email" contenteditable="true"></td>
+      <tr>
+         <td><label for="password">Password</label></td>
+         <td><input type="password" name="password" id="password" placeholder="Your Password" contenteditable="true">
+         </td>
          <td><input type="submit" value="Submit"></td>
          <td><input type="reset" value="Reset" style="margin-left:0;"></td>
       </tr>
    </table>
-
+   </form>
 </body>
 
 </html>
