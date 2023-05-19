@@ -1,0 +1,95 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+#parent {
+    border: solid red 10px;
+    display: flex;
+
+    /*
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    */
+
+    flex-flow: row wrap;
+    height: 500px;
+
+    /*To arrange elements on main axis, we can use justify content*/
+
+    /* justify-content: start */
+    /* justify-content: end */
+    justify-content: start;
+    /* justify-content: space-between */
+    /* justify-content: space-around */
+    /* justify-content: space-evenly; */
+
+    /*To arrange elements on cross axis, we can use align-items*/
+
+    /* align-items: start; */
+    /* align-items: end */
+    align-items: center;
+    /* align-items: stretch */
+    /* align-items: baseline */
+
+    /*To arrange elements on cross axis, we can use align-content*/
+
+    align-content: start;
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: stretch; */
+    /* align-content: space-evenly; */
+
+
+}
+
+#parent div {
+    border: solid blue 2px;
+    padding: 20px;
+    background-color: bisque;
+    min-width: 100px;
+    /* max-width: 200px; */
+    max-height: 100px;
+    /* min-height: 100px; */
+    
+}
+
+#parent div:nth-child(1) {
+    flex-basis: 100%;
+    /* flex-basis: 200px; */
+    /* flex-basis: 50%; */
+    /* flex-basis: 0; */
+    /* flex-basis: auto; */
+    /* flex-basis: content; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav button {
+    margin-left: 10px;
+}
+
+.signin {
+    background-color: rgb(229,9,20);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.signin:hover {
+    background-color: rgb(193,17,25);
+}
