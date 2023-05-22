@@ -1,0 +1,33 @@
+.html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 50%;
+    height: 800px;
+    margin: 0;
+    padding: 20px;
+    background-color: lightgrey;
+    border: solid 1px grey;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.container div {
+    border: solid 1px grey;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: lightblue;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 2;
+}
