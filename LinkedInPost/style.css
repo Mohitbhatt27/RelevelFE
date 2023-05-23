@@ -1,0 +1,83 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+div img {
+  width: 10rem;
+  height: 10rem;
+
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.post-header-info p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.post-content p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.post-footer {
+  margin-top: 10px;
+}
+
+.post-footer button {
+  background-color: #fff;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.post-footer button:hover {
+  background-color: #f5f5f5;
+}
+
+.post-footer button:not(:last-child) {
+  margin-right: 5px;
+}
