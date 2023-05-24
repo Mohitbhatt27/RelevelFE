@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    /* border: black 1px solid; */
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    width: 25px;
+    height: 25px;
+    border: rgb(190, 13, 13) 3px solid;
+    margin: 50px;
+}
+
+#item2 {
+    
+    /* border-top: none; */
+    /* border-radius: 50% */
+    background-color: aqua;
+    animation-name: rotator;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#item2:hover {
+    /* transform: rotate(20deg); */
+    /* transform: skewY(20deg); */
+    /* transform: scaleY(1.5); */
+    /* transform: translateX(100px); */
+    /* margin-left: 2000px; */
+
+    
+    /* background-color: rgb(255, 127, 144); */
+    /* transition-delay: 0;
+    transition-duration: 5s;
+    transition-property: all;
+    transition-timing-function: ease-out; */
+
+
+}
+
+@keyframes rotator {
+    0% {
+        transform: translateX(-500px);
+        background-color: aqua;
+    }
+    50% {
+        transform: translateX(500px);
+        background-color: rgb(255, 127, 144);
+    }
+
+    100% {
+        transform: translateX(-500px);
+        background-color: aqua;
+    }
+
+}
