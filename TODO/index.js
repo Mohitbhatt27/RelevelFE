@@ -36,8 +36,6 @@ function reRenderTodos() {
   });
 }
 function removeTodo(event) {
-  // console.log("clicked", event.target.parentElement.parentElement.parentElement)
-  // event.target.parentElement.parentElement.parentElement.remove();
   let deleteButtonPressed = event.target;
   let indexTobeRemoved = Number(deleteButtonPressed.getAttribute('todo-idx'));
   todos.splice(indexTobeRemoved, 1);
@@ -107,7 +105,7 @@ function addTodo(todo, todoCount) {
   finishedButton.onclick = finishTodo;
 
   todoNumber.textContent = `${todoCount}.`;
-  todoDetail.textContent = todo.text; // sets the todo text sent from the input element
+  todoDetail.textContent = todo.text; 
   todoStatus.textContent = todo.status;
   deleteButton.textContent = 'Delete';
   finishedButton.textContent = todo.finishButtontext;
@@ -125,18 +123,3 @@ function addTodo(todo, todoCount) {
 
   todoDataList.appendChild(rowDiv);
 }
-
-// Reference
-// let getTodosButton = document.getElementById('get-todos');
-// registration of event listener
-// getTodosButton.addEventListener("click", () => {
-//     console.log("clicked");
-// });
-
-// getTodosButton.onclick = () => {
-//     console.log("clicked")
-// }
-
-// function clickBtn() {
-//     console.log("click")
-// }
