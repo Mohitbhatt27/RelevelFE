@@ -46,7 +46,7 @@ function finishTodo(event) {
   let finshButtonPressed = event.target;
   let indexToBeFinshed = Number(finshButtonPressed.getAttribute('todo-idx'));
 
-  // toggle
+  // toggling
   if (todos[indexToBeFinshed].status == 'Finished') {
     todos[indexToBeFinshed].status = 'In progress';
     todos[indexToBeFinshed].finishButtontext = 'Finshed';
@@ -105,7 +105,7 @@ function addTodo(todo, todoCount) {
   finishedButton.onclick = finishTodo;
 
   todoNumber.textContent = `${todoCount}.`;
-  todoDetail.textContent = todo.text; 
+  todoDetail.textContent = todo.text;
   todoStatus.textContent = todo.status;
   deleteButton.textContent = 'Delete';
   finishedButton.textContent = todo.finishButtontext;
